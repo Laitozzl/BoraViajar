@@ -18,17 +18,27 @@ li{
 
 a{
     text-decoration: none;
-    color: #000;
-    font-size: 1rem;
+    color: #fff;
+    font-size: 1.275rem;
 }
 
 a:hover{
-    color: rgb(10, 119, 25);
+    color: rgb(73, 218, 92);
 }
 
 header{
     position: relative;
     padding: 0 2rem;
+    background-color: #13763f;
+
+}
+
+.logo img{
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    top: -25px;
+    left: 140px;
 }
 
 .barramenu{
@@ -87,6 +97,12 @@ header{
 }
 
 @media(max-width: 800px){
+    .logo img{
+
+        text-align: center;
+        justify-content: center;
+    }
+
     .barramenu .links{
         display: none;
     }
@@ -140,6 +156,10 @@ header{
 }
 
 
+.imagem-data{
+    width: 40%;
+}
+
 .slide .imagem-data{
     position: absolute;
     top: 3%;
@@ -168,13 +188,17 @@ header{
 .slide .imagem-data2{
     position: absolute;
     top: -2%;
-    left: 22%;
+    left: 35%;
     transform: translate(-50%, 50%);
 }
 
 .imagem-data2 span.texto{
     font-size: 44px;
     font-weight: 400;
+}
+
+.text1{
+    max-width: 45%;
 }
 
 .imagem-data2 h3{
@@ -302,7 +326,6 @@ header{
 .page3{
     background: #54923a;
     width: 100%;
-    height: 1050px;
     padding: 80px;
 }
 
@@ -324,7 +347,7 @@ header{
 
 .quadrado{
     height: 400px;
-    width: 500px;
+    width: 40%;
     background-color: #addf98;
     border: solid;
     border-color: white;
@@ -332,6 +355,14 @@ header{
 }
 
 .servicos{
+    width: 100%;
+    padding: 80px;
+    margin-left: -10px;
+    display: flex;
+    gap: 55px;
+    margin-bottom: 0;
+}
+.servicos2{
     height: 60px;
     padding: 80px;
     margin-left: -10px;
@@ -364,13 +395,13 @@ header{
 .exemplos h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;;
     margin-top: 25px;
-    font-size: 45px;
+    font-size: 35px;
 }
 
 .exemplos p{
     padding: 20px;
     margin-top: 28px;
-    text-align: center;
+    text-align: justify;
     justify-content: center;
     font-size: 25px;
 }
@@ -378,13 +409,13 @@ header{
 .exemplos2 h1{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 25px;
-    font-size: 45px;
+    font-size: 35px;
 }
 
 .exemplos2 p{
     padding: 20px;
     margin-top: 25px;
-    text-align: center;
+    text-align: justify;
     justify-content: center;
     font-size: 25px;
 }
@@ -392,13 +423,13 @@ header{
 .exemplos3 h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;;
     margin-top: 45px;
-    font-size: 45px;
+    font-size: 35px;
 }
 
 .exemplos3 p{
     padding: 20px;
     margin-top: 55px;
-    text-align: center;
+    text-align: justify;
     justify-content: center;
     font-size: 25px;
 }
@@ -422,6 +453,14 @@ header{
         display: grid;
         padding: 20px;  
         width: 100%;
+        margin-left: 18px;
+    }
+
+    .servicos2{
+        display: grid;
+        padding: 20px;  
+        width: 100%;
+        margin-left: 5px;
     }
 
     .quadrado{
@@ -523,6 +562,40 @@ header{
 
 }
 
+
+
+@media(max-width:1325px){
+    body{
+        width: 100%;
+    }
+
+
+    .page1{
+        height: 900px;
+    }
+
+    .page2{
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .page3{
+        width: 100%;
+        margin: 0;
+        padding: 25px;
+    }
+
+
+}
+
+@media(min-width:801px) and (max-width: 1300px){
+    .servicos
+    {
+        flex-wrap: wrap;
+    }
+}
+
 /*Rodapé*/
 
 footer{
@@ -561,11 +634,13 @@ footer{
 
 .icon{
     font-size: 40px;
+    color: #000;
 }
 
 .icones{
     width: 70px;
     height: 70px;
+    justify-content: center;
 }
 
 #email{

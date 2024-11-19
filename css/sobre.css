@@ -4,17 +4,27 @@ li{
 
 a{
     text-decoration: none;
-    color: #000;
-    font-size: 1rem;
+    color: #fff;
+    font-size: 1.275rem;
 }
 
 a:hover{
-    color: rgb(10, 119, 25);
+    color: rgb(73, 218, 92);
 }
 
 header{
     position: relative;
     padding: 0 2rem;
+    background-color: #13763f;
+
+}
+
+.logo img{
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    top: -25px;
+    left: 140px;
 }
 
 .barramenu{
@@ -71,9 +81,11 @@ header{
     align-items: center;
     justify-content: center;
 }
-
 header{
-    background-color: #fff;
+    position: relative;
+    padding: 0 2rem;
+    background-color: #13763f;
+
 }
 
 hr{
@@ -84,5 +96,170 @@ body{
     background-color: lightgreen;
     height: 100%;
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
+}
+
+@media(max-width: 800px){
+    .logo img{
+
+        text-align: center;
+        justify-content: center;
+    }
+
+    .barramenu .links{
+        display: none;
+    }
+
+    .barramenu .barra_btn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+}
+
+@media(max-width: 769px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+}
+
+.pagina{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+    max-width: 100%;
+}
+
+.size{
+    max-width: 100%;
+}
+
+.paragrafos{
+    font-size: 14px;
+    text-align: justify;
+}
+
+.columns--2{
+    column-count: 2;
+}
+
+@media(max-width:769px){
+    .columns--1{
+        column-count: 1;
+    }
+}
+
+
+.rodape{
+    height: 80vh;
+}
+
+footer{
+    width: 100%;
+
+}
+
+#conteudo{
+    background-color: #addf98;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem 3.5rem;
+    justify-content: center;
+    text-align: center;
+}
+
+#Logo{
+    align-items: center;
+    margin: 35px;
+}
+
+#redes .icons{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    gap: 5.5rem;
+    margin-top: 1.5rem;
+    color: #fff;
+    font-size: 19px;
+    font-style:initial;
+}
+
+#redes h1{
+    color: #fff;
+}
+
+.icon{
+    font-size: 40px;
+    color: #000;
+}
+
+.icones{
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+}
+
+#email{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.subscribe{
+    font-size: 25px;
+}
+
+
+#input-wrap{
+    display: flex;
+    align-items: center;
+    background-color:#fff;
+    border-radius: 4px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#input-wrap input{
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input-wrap button{
+    background-color: gray;
+    border: none;
+    color: white;
+    padding: 0px 1.25rem;
+    font-size: 2.25rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input-wrap button:hover{
+    opacity: 0.8;
+}
+
+@media screen and (max-width:800px) {
+    #conteudo{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    #conteudo{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+
+    #redes .icons{
+        flex-wrap: wrap-reverse;
+    }
 }

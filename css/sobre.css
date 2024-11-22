@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 li{
     list-style: none;
 }
@@ -12,81 +19,117 @@ a:hover{
     color: rgb(73, 218, 92);
 }
 
-header{
-    position: relative;
-    padding: 0 2rem;
-    background-color: #13763f;
-
-}
-
-.logo img{
+header {
+    background: #54923a;
+    height: 80px;
+    width: 100%;
+    z-index: 998;
+    box-shadow: #000;
+  }
+  
+  label.logo img {
     height: 120px;
     width: 120px;
     position: absolute;
-    top: -25px;
+    top: -15px;
     left: 140px;
-}
-
-.barramenu{
-    width: 100%;
-    height: 60px;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.barramenu .logo a{
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.barramenu .links{
-    display: flex;
-    gap: 8em;
-}
-
-.barramenu .barra_btn{
-    font-size: 1.5rem;
+  }
+  
+  header ul {
+    float: right;
+    margin-right: 200px;
+  }
+  
+  header ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  
+  header ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  
+  a.active,
+  a:hover {
+    color: lawngreen;
+    transition: .5s;
+  }
+  
+  .barra_btn {
+    font-size: 22px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 30px;
     cursor: pointer;
     display: none;
-}
-
-.dropdown_menu{
-    background-color: #000;
+  }
+  
+  #check {
     display: none;
-    position: absolute;
-    right: 2rem;
-    top: 60px;
-    height: 0;
-    width: 300px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-    border: solid;
-    border-color: black;
-    overflow: hidden;
-    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.dropdown_menu.open{
-    height: 240px;
-    color: green;
-}
-
-.dropdown_menu li {
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-header{
-    position: relative;
-    padding: 0 2rem;
-    background-color: #13763f;
-
-}
+  }
+  
+  @media (max-width: 1050px) {
+    label.logo {
+      padding-left: 30px;
+    }
+  
+    header ul li a {
+      font-size: 16px;
+    }
+  }
+  
+  /* Responsive media query code for small screen */
+  @media (max-width: 800px) {
+    .barra_btn {
+      display: block;
+    }
+  
+    label.logo {
+      font-size: 22px;
+    }
+  
+    .menudown {
+      content: "";
+      visibility: visible;
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background-color: #afce27;
+      background-size: cover;
+      z-index: 1;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+  
+    header ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+  
+    header ul li a {
+      font-size: 20px;
+    }
+  
+    a:hover,
+    a.active {
+      background: none;
+      color: black;
+    }
+  
+    #check:checked~ul {
+      left: 0;
+    }
+  }
+  
 
 hr{
     margin: 0;
@@ -126,10 +169,20 @@ body{
     }
 }
 
+section{
+    margin-bottom: 155px;
+}
+
+.sobre{
+    font-size: 40px;
+    padding: 20px;
+}
+
 .pagina{
+    margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
-    width: 1100px;
+    width: 1200px;
     max-width: 100%;
 }
 
@@ -138,7 +191,8 @@ body{
 }
 
 .paragrafos{
-    font-size: 14px;
+    padding: 20px;
+    font-size: 20px;
     text-align: justify;
 }
 
@@ -146,21 +200,25 @@ body{
     column-count: 2;
 }
 
+@media(max-width:1140px){
+    .paragrafos{
+        padding: 20px;
+    }
+    .sobre{
+        padding: 20px;
+    }
+}
 @media(max-width:769px){
     .columns--1{
         column-count: 1;
     }
+
+    .sobre{
+        text-align: center;
+    }
 }
 
 
-.rodape{
-    height: 80vh;
-}
-
-footer{
-    width: 100%;
-
-}
 
 #conteudo{
     background-color: #addf98;
@@ -189,6 +247,7 @@ footer{
 }
 
 #redes h1{
+    text-align: center;
     color: #fff;
 }
 

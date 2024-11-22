@@ -9,23 +9,22 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="barramenu">
-            <div class="logo"><img src="images/logo.png"></div>
-            <ul class="links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="html/sobre.html">Sobre</a></li>
-            </ul>
-            <div class="barra_btn">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </div>
+  <header>
+    <input type="checkbox" id="check">
 
-        <div class="dropdown_menu">
-            <li><a href="index.html" class="cabecalho">Inicio</a></li>
-            <li><a href="html/sobre.html" class="cabecalho">Sobre</a></li>
-        </div>
-    </header>
+    <!-- Menu icon -->
+    <label for="check" class="barra_btn">
+      <i class="fas fa-bars"></i>
+    </label>
+
+    <!-- Site logo -->
+    <label class="logo"><img src="images/logo.png"></label>
+
+    <ul class="menudown">
+      <li><a class="active" href="#">Inicio</a></li>
+      <li><a href="html/sobre.html">Sobre</a></li>
+    </ul>
+  </header>
     <hr class="linha">
 
 <div class="main">
@@ -110,45 +109,45 @@
         </div>
         </section>
 </div>
-    <footer>
-        <div id="conteudo">
-          <div id="Logo"><h1>Logo</h1></div>
-          <div id="redes">
-            <h1>Contatos:</h1>
-            <ul class="icons">
-              <li class="icones">
-                <a href="https://www.instagram.com/vivaagencia.web?igsh=MW5naWdzcnYweXowNQ==" class="icon">
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <h4>Instagram</h4>
-              </li>
-              <li class="icones">
-                <a href="#" class="icon">
-                  <i class="fa-solid fa-envelope"></i>
-                </a>
-                <h4>email</h4>
-              </li>
-              <li class="icones">
-                <a href="#" class="icon">
-                 <i class="fa-brands fa-whatsapp"></i>
-                </a>
-                <h4>Whatsapp</h4>
-              </li>
-            </ul>
-          </div>
-          <div id="email">
-            <p class="subscribe">Escreva para nosso email</p>
-            <form>
-              <div id="input-wrap">
-                <input type="text" placeholder="exemplo@gmail.com"/>
-                <button type="enviar" id="botao">
-                  <i class="fas fa-paper-plane"></i>
-                </button>
-              </div>
-            </form>
-          </div>
+<footer>
+  <div id="conteudo">
+    <div id="Logo"><img src="images/logo.png" alt=""></div>
+    <div id="redes">
+      <h1>Contatos:</h1>
+      <ul class="icons">
+        <li class="icones">
+          <a href="https://www.instagram.com/vivaagencia.web?igsh=MW5naWdzcnYweXowNQ==" class="icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <h4>Instagram</h4>
+        </li>
+        <li class="icones">
+          <a href="#" class="icon">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <h4>Email</h4>
+        </li>
+        <li class="icones">
+          <a href="#" class="icon">
+           <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <h4>Whatsapp</h4>
+        </li>
+      </ul>
+    </div>
+    <div id="email">
+      <p class="subscribe">Escreva para nosso email</p>
+      <form>
+        <div id="input-wrap">
+          <input type="text" placeholder="exemplo@gmail.com"/>
+          <button type="enviar" id="botao">
+            <i class="fas fa-paper-plane"></i>
+          </button>
         </div>
-      </footer>
+      </form>
+    </div>
+  </div>
+</footer>
 
 <script src="js/swiper-bundle.min.js"></script>
 

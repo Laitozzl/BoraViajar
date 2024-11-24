@@ -220,6 +220,10 @@ section{
 
 
 
+footer{
+    width: 100%;
+}
+
 #conteudo{
     background-color: #addf98;
     height: 100%;
@@ -233,6 +237,9 @@ section{
 #Logo{
     align-items: center;
     margin: 35px;
+}
+#Logo img{
+    max-width: 100%;
 }
 
 #redes .icons{

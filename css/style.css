@@ -295,11 +295,7 @@ hr{
     }
 }
 
-@media screen and (max-width: 1680px){
-    .text1{
-        max-width: 70%;
-    }
-}
+
 
 
 /*Página 2*/
@@ -747,6 +743,14 @@ footer{
 
 #input-wrap button:hover{
     opacity: 0.8;
+}
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: #54923a;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
 }
 
 @media screen and (max-width:800px) {

@@ -324,6 +324,14 @@ hr{
     border-radius: 10%;
 }
 
+.saopaulo{
+    background: url('../images/mar.jpg');
+}
+
+.espiritosanto{
+    background: url('../images/pedraazul.jpg');
+}
+
 .palavras h1{
     margin-top: 60px;
     color: #fff;
@@ -373,7 +381,7 @@ hr{
 
 /*pagina 3*/
 .page3{
-    background: #54923a;
+    background: #addf98;
     width: 100%;
     padding: 80px;
 }
@@ -396,9 +404,10 @@ hr{
 .quadrado{
     height: 400px;
     width: 40%;
-    background-color: #addf98;
+    background-color: #7ad37f;
     border: solid;
     border-color: white;
+    border-width: 5px;
     border-radius: 10%;
 }
 
@@ -659,7 +668,7 @@ footer{
 }
 
 #conteudo{
-    background-color: #addf98;
+    background-color: #54923a;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);

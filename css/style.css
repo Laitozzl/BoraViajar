@@ -420,8 +420,6 @@ hr{
     margin-bottom: 0;
 }
 .servicos2{
-    height: 60px;
-    padding: 80px;
     margin-left: -10px;
     display: flex;
     gap: 110px;
@@ -524,7 +522,6 @@ hr{
     .quadrado{
     height: 400px;
     width: 90%;
-    background-color: #addf98;
     border: solid;
     border-color: white;
     border-radius: 10%;
@@ -615,7 +612,7 @@ hr{
 
     .votar{
         position: relative;
-        top: 60%;
+        top: 41.5%;
     }
 
 
@@ -760,6 +757,11 @@ footer{
     font-size: 0.9rem;
     padding: 1.5rem;
     font-weight: 100;
+}
+
+.icones h4{
+    justify-content: center;
+    text-align: center;
 }
 
 @media screen and (max-width:800px) {

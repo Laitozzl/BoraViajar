@@ -574,24 +574,13 @@ hr{
     .exemplos3 h1{
         font-size: 30px;
     }
-
-    .pagina1{
-        display: none;
-    }
-
-    .pagina2{
-        display: none;
-    }
-
-
-    .grupo, .slide{
     
+    .grupo, .slide{
         background: url(/images/responsive.png);
     }
 
 
     .slide .imagem-data{
-
         left: 49%;
     }
 
@@ -625,8 +614,6 @@ hr{
 
 
 }
-
-
 
 @media(max-width:1325px){
     body{

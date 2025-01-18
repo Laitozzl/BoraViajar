@@ -28,7 +28,7 @@ body {
 }
 
 header {
-  background: #54923a;
+  background: #84cb66;
   height: 80px;
   width: 100%;
   z-index: 998;
@@ -673,7 +673,7 @@ footer{
 }
 
 #conteudo{
-    background-color: #54923a;
+    background-color: #84cb66;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);

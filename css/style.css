@@ -36,11 +36,10 @@ header {
 }
 
 label.logo img {
-  height: 120px;
-  width: 120px;
+  height: 105px;
   position: absolute;
   top: -15px;
-  left: 140px;
+  left: 30px;
 }
 
 header ul {
@@ -190,6 +189,7 @@ hr{
     top: 3%;
     left: 22%;
     transform: translate(-50%, 50%);
+    color: #fff;
 }
 
 
@@ -201,7 +201,6 @@ hr{
 .imagem-data h3{
     font-size: 28px;
     font-weight: 400;
-    text-align: justify;
 }
 
 .slide .pagina2{
@@ -215,6 +214,7 @@ hr{
     top: -5%;
     left: 25%;
     transform: translate(-50%, 50%);
+    color: #fff;
 }
 
 .imagem-data2 span.texto{
@@ -223,14 +223,12 @@ hr{
 }
 
 .text1{
-    text-align: justify;
-    max-width: 75%;
+    max-width: 80%;
 }
 
 .imagem-data2 h3{
     font-size: 28px;
     font-weight: 400;
-    text-align: justify;
 }
 
 .seta-btn{
@@ -369,13 +367,21 @@ hr{
 .votar{
     color: #fff;
     position: relative;
-    border-radius: 30px;
+    border-radius: 40px;
     border:solid;
+    width: 205px;
     border-width: 15px;
     background-color: #54923a;
     border-color: #54923a;
-    top: 70%;
     text-align: center;
+}
+
+.votebutton{
+    position: relative;
+    display: flex;
+    gap: 270px;
+    top: 4%;
+    justify-content: center;
 }
 
 
@@ -580,7 +586,7 @@ hr{
 
     .grupo, .slide{
     
-        background: #54923a;
+        background: url(/images/responsive.png);
     }
 
 
@@ -610,9 +616,11 @@ hr{
         font-size: 20px;
     }
 
-    .votar{
+    .votebutton{
         position: relative;
-        top: 41.5%;
+        display: grid;
+        top: -47%;
+        gap: 460px;
     }
 
 
@@ -627,7 +635,7 @@ hr{
 
 
     .page1{
-        height: 900px;
+        height: 760px;
     }
 
     .page2{
